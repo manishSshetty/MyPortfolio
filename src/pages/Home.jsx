@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 import Header from "../Components/Header";
+import TypeWriterText from "../Components/TypeWriterText";
 
 const Home = () => {
   return (
@@ -10,15 +11,15 @@ const Home = () => {
       <div
         className="absolute inset-0 opacity-30"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.20) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.20) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.50) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.50) 1px, transparent 1px)`,
           backgroundSize: "50px 50px",
         }}
       ></div>
 
       <main className="relative z-10 text-center px-6 pt-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-mono font-bold mb-4 tracking-wider">
-          PORTFOLIO.EXE_
+            <TypeWriterText text="PORTFOLIO.EXE" delay={150}/>
         </h2>
         <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-8 tracking-widest">
           &gt; FULL STACK DEVELOPER
