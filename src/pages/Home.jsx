@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 import Header from "../Components/Header";
 import TypeWriterText from "../Components/TypeWriterText";
@@ -19,7 +19,7 @@ const Home = () => {
 
       <main className="relative z-10 text-center px-6 pt-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-mono font-bold mb-4 tracking-wider">
-            <TypeWriterText text="PORTFOLIO.EXE" delay={150}/>
+          <TypeWriterText text="PORTFOLIO.EXE" delay={150} />
         </h2>
         <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-8 tracking-widest">
           &gt; FULL STACK DEVELOPER
@@ -47,13 +47,13 @@ const Home = () => {
         </div>
 
         <div className="flex gap-6 justify-center mb-8">
-          <button className="border border-gray-400 p-3 hover:bg-gray-50">
+          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50">
             <Github />
           </button>
-          <button className="border border-gray-400 p-3 hover:bg-gray-50">
+          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50">
             <Linkedin />
           </button>
-          <button className="border border-gray-400 p-3 hover:bg-gray-50">
+          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50">
             <Mail />
           </button>
         </div>
@@ -64,6 +64,12 @@ const Home = () => {
           Manish Shetty
         </h3>
       </footer>
+
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
+        <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 rounded-full animate-bounce">
+          <ArrowDown />
+        </button>
+      </div>
     </div>
   );
 };

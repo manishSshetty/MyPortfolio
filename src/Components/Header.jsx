@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import React from "react";
 
 const Header = () => {
@@ -8,9 +9,7 @@ const Header = () => {
           PORTFOLIO.EXE
         </h1>
         <button className="flex flex-col gap-0.5 sm:gap-1 p-2 sm:p-2.5 md:p-3">
-          <div className="w-4 sm:w-5 md:w-6 h-0.5 bg-black"></div>
-          <div className="w-4 sm:w-5 md:w-6 h-0.5 bg-black"></div>
-          <div className="w-4 sm:w-5 md:w-6 h-0.5 bg-black"></div>
+         <Menu />
         </button>
       </div>
     </header>
