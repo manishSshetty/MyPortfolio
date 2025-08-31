@@ -67,12 +67,23 @@ const Projects = () => {
               </div>
 
               <div className="flex justify-center gap-3 mt-4">
-                <button className="w-4/5 bg-black text-white px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-800 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2">
+                <a
+                  href="https://github.com/manishSshetty/mern-chat-app.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4/5 bg-black text-white px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-800 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2"
+                >
                   <Github /> CODE
-                </button>
-                <button className="w-4/5 border border-gray-400 px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-50 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2">
-                  <ExternalLink /> DEMO
-                </button>
+                </a>
+
+                <a
+                  href="https://mern-chat-app-1iwn.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4/5 border border-gray-400 px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-50 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2"
+                >
+                  <ExternalLink /> Demo
+                </a>
               </div>
             </div>
           </div>
@@ -81,7 +92,7 @@ const Projects = () => {
             <div className="relative">
               <img
                 src={shifra}
-                alt="Chat App Website"
+                alt="Virtual Assistant Website"
                 className="w-full h-auto object-contain max-h-60 sm:max-h-72 md:max-h-[28rem]"
               />
 
@@ -94,12 +105,10 @@ const Projects = () => {
               <h2 className="text-lg sm:text-xl md:text-2xl font-mono font-bold mb-3 sm:mb-4">
                 VIRTUAL-ASSISTANT.EXE
               </h2>
-
               <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 An AI-powered virtual assistant that engages in intelligent
                 conversations and helps users with tasks in real time
               </p>
-
               <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
                 <span className="px-2 sm:px-3 py-1 bg-gray-100 text-gray-700 text-xs sm:text-sm">
                   React
@@ -113,12 +122,23 @@ const Projects = () => {
               </div>
 
               <div className="flex justify-center gap-3 mt-4">
-                <button className="w-4/5 bg-black text-white px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-800 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2">
+                <a
+                  href="https://github.com/manishSshetty/virtual_assistant.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4/5 bg-black text-white px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-800 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2"
+                >
                   <Github /> CODE
-                </button>
-                <button className="w-4/5 border border-gray-400 px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-50 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2">
-                  <ExternalLink /> DEMO
-                </button>
+                </a>
+
+                <a
+                  href=" https://manishvirtualassistant.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4/5 border border-gray-400 px-5 py-2 font-mono text-sm sm:text-base hover:bg-gray-50 transition-colors rounded-md cursor-pointer flex items-center justify-center gap-2"
+                >
+                  <ExternalLink /> Demo
+                </a>
               </div>
             </div>
           </div>
