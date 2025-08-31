@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl font-mono font-bold tracking-wide">
           PORTFOLIO.EXE
         </h1>
-        <button className="flex flex-col gap-0.5 sm:gap-1 p-2 sm:p-2.5 md:p-3">
+        <button className="flex flex-col gap-0.5 sm:gap-1 p-2 sm:p-2.5 md:p-3 cursor-pointer">
          <Menu />
         </button>
       </div>

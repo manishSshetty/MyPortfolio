@@ -38,22 +38,22 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <button className="bg-black text-white px-8 py-3 font-mono hover:bg-gray-800">
+          <button className="bg-black text-white px-8 py-3 font-mono hover:bg-gray-800 cursor-pointer"> 
             VIEW PROJECTS
           </button>
-          <button className="border border-gray-400 px-8 py-3 font-mono hover:bg-gray-50">
+          <button className="border border-gray-400 px-8 py-3 font-mono hover:bg-gray-50 cursor-pointer">
             DOWNLOAD CV
           </button>
         </div>
 
         <div className="flex gap-6 justify-center mb-8">
-          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50">
+          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer">
             <Github />
           </button>
-          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50">
+          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer">
             <Linkedin />
           </button>
-          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50">
+          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer">
             <Mail />
           </button>
         </div>
@@ -66,7 +66,7 @@ const Home = () => {
       </footer>
 
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
-        <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 rounded-full animate-bounce">
+        <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 rounded-full animate-bounce cursor-pointer">
           <ArrowDown />
         </button>
       </div>
