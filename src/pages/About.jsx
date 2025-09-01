@@ -20,7 +20,7 @@ const About = () => {
       </div>
 
       <div className="max-w-2xl mx-auto space-y-8">
-        <div className="bg-white border-2 border-gray-300 p-8 relative hover:bg-gray-50 cursor-pointer">
+        <div className="bg-white border-2 border-gray-300 p-8 relative hover:bg-gray-50">
           <div className="absolute top-0 right-0 w-6 h-full bg-black"></div>
           <div className="text-center">
             <Code size={40} className="mx-auto mb-4" />
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-white border-2 border-gray-300 p-8 relative hover:bg-gray-50 cursor-pointer">
+        <div className="bg-white border-2 border-gray-300 p-8 relative hover:bg-gray-50">
           <div className="absolute top-0 right-0 w-6 h-full bg-black"></div>
           <div className="text-center">
             <Database size={40} className="mx-auto mb-4" />
@@ -46,7 +46,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="bg-white border-2 border-gray-300 p-8 relative hover:bg-gray-50 cursor-pointer">
+        <div className="bg-white border-2 border-gray-300 p-8 relative hover:bg-gray-50">
           <div className="absolute top-0 right-0 w-6 h-full bg-black"></div>
           <div className="text-center">
             <Globe size={40} className="mx-auto mb-4" />

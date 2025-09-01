@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,12 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("");
+
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const handleChange = (e) => {
     setFormData({
@@ -16,15 +23,37 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus("");
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        PUBLIC_KEY
+      );
+
+      setSubmitStatus("Message sent successfully!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      setSubmitStatus("Failed to send message. Please try again.");
+      console.error("EmailJS error:", error);
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
     <div className="min-h-screen bg-white">
       <main className="px-4 md:px-6 pt-24 md:pt-32 pb-16">
-  
         <div className="text-center mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
             CONTACT.EXE
@@ -54,7 +83,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   required
                 />
               </div>
@@ -69,7 +98,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500  cursor-pointer"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   required
                 />
               </div>
@@ -84,7 +113,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Project inquiry"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500  cursor-pointer"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                   required
                 />
               </div>
@@ -99,18 +128,41 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Tell me about your project..."
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 resize-vertical  cursor-pointer"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 resize-vertical"
                   required
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-black text-white py-3 px-6 font-mono hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                disabled={isSubmitting}
+                className={`w-full py-3 px-6 font-mono transition-colors flex items-center justify-center gap-2 text-white ${
+                  isSubmitting
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-black hover:bg-gray-800 cursor-pointer"
+                }`}
               >
-                <Send />
-                SEND MESSAGE
+                {isSubmitting ? (
+                  "Sending..."
+                ) : (
+                  <>
+                    <Send />
+                    SEND MESSAGE
+                  </>
+                )}
               </button>
+
+              {submitStatus && (
+                <p
+                  className={`mt-4 text-center font-mono ${
+                    submitStatus.includes("success")
+                      ? "text-green-600"
+                      : "text-red-600"
+                  }`}
+                >
+                  {submitStatus}
+                </p>
+              )}
             </form>
           </div>
 
