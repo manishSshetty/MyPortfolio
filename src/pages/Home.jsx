@@ -1,13 +1,10 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
-import Header from "../Components/Header";
 import TypeWriterText from "../Components/TypeWriterText";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-white relative">
-      <Header />
-
       <div
         className="absolute inset-0 opacity-30"
         style={{
