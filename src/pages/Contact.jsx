@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "../Components/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -229,6 +230,8 @@ const Contact = () => {
           </div>
         </div>
       </main>
+
+      <Footer/>
     </div>
   );
 };
