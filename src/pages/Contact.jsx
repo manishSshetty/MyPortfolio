@@ -170,7 +170,7 @@ const Contact = () => {
             <h2 className="text-2xl font-mono font-bold mb-8">GET IN TOUCH</h2>
 
             <div className="space-y-4">
-              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50 cursor-pointer">
+              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50">
                 <Mail />
                 <div>
                   <div className="text-sm text-gray-600 font-mono">EMAIL</div>
@@ -178,7 +178,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50 cursor-pointer">
+              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50">
                 <Phone />
                 <div>
                   <div className="text-sm text-gray-600 font-mono">PHONE</div>
@@ -186,7 +186,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4 hover:bg-gray-50 cursor-pointer">
+              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4 hover:bg-gray-50">
                 <MapPin />
                 <div>
                   <div className="text-sm text-gray-600 font-mono">
@@ -202,19 +202,29 @@ const Contact = () => {
             <h2 className="text-2xl font-mono font-bold mb-8">SOCIAL LINKS</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer">
+              <a
+                href="https://github.com/manishSshetty"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer"
+              >
                 <div className="mb-2">
                   <Github />
                 </div>
                 <div className="font-mono font-bold">GITHUB</div>
-              </div>
+              </a>
 
-              <div className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer">
+              <a
+                href="https://www.linkedin.com/in/manish-shetty-50b19636a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer"
+              >
                 <div className="mb-2">
                   <Linkedin />
                 </div>
                 <div className="font-mono font-bold">LINKEDIN</div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
