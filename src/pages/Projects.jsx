@@ -6,7 +6,7 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   return (
     <div className="min-h-screen bg-white">
-      <main className="px-4 md:px-6 pt-12 md:pt-16 pb-16">
+      <main className="px-4 md:px-6 pt-16 md:pt-20 pb-16">
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
             PROJECTS.DIR

@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 import TypeWriterText from "../Components/TypeWriterText";
+import resume from "../assets/resume.pdf"
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
         }}
       ></div>
 
-      <main className="relative z-10 text-center px-6 pt-20">
+      <main className="relative z-10 text-center px-6 pt-24">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-mono font-bold mb-4 tracking-wider">
           <TypeWriterText text="PORTFOLIO.EXE" delay={150} />
         </h2>
@@ -35,24 +36,47 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <button className="bg-black text-white px-8 py-3 font-mono hover:bg-gray-800 cursor-pointer"> 
+          <a
+            href="#projects"
+            className="bg-black text-white px-8 py-3 font-mono hover:bg-gray-800 cursor-pointer"
+          >
             VIEW PROJECTS
-          </button>
-          <button className="border border-gray-400 px-8 py-3 font-mono hover:bg-gray-50 cursor-pointer">
+          </a>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-gray-400 px-8 py-3 font-mono hover:bg-gray-50 cursor-pointer"
+          >
             DOWNLOAD CV
-          </button>
+          </a>
         </div>
 
         <div className="flex gap-6 justify-center mb-8">
-          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer">
+          <a
+            href="https://github.com/manishSshetty"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer"
+          >
             <Github />
-          </button>
-          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/manish-shetty-50b19636a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer"
+          >
             <Linkedin />
-          </button>
-          <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer">
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=manishshetty827@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-gray-400 p-3 hover:bg-gray-50 cursor-pointer"
+          >
             <Mail />
-          </button>
+          </a>
         </div>
       </main>
 
@@ -63,9 +87,12 @@ const Home = () => {
       </footer>
 
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
-        <button className="border-2 border-gray-400 p-3 hover:bg-gray-50 rounded-full animate-bounce cursor-pointer">
+        <a
+          href="#about"
+          className="border-2 border-gray-400 p-3 hover:bg-gray-50 rounded-full animate-bounce cursor-pointer flex"
+        >
           <ArrowDown />
-        </button>
+        </a>
       </div>
     </div>
   );

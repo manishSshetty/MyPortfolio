@@ -3,3 +3,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

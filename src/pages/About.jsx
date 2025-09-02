@@ -3,7 +3,7 @@ import { Code, Database, Globe } from "lucide-react";
 
 const About = () => {
   return (
-    <main className="min-h-screen bg-white px-4 md:px-6 pt-12 md:pt-16 pb-16">
+    <main className="min-h-screen bg-white px-4 md:px-6 pt-16 md:pt-20 pb-16">
       <div className="text-center mb-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
           ABOUT.TXT

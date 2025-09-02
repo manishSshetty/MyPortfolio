@@ -4,7 +4,7 @@ import React from "react";
 const Experience = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <main className="px-4 md:px-6 pt-12 md:pt-16 pb-16">
+      <main className="px-4 md:px-6 pt-16 md:pt-20 pb-16">
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
             EXPERIENCE.LOG
@@ -37,7 +37,7 @@ const Experience = () => {
 
             <div className="flex items-center text-gray-500 mb-4 gap-1">
               <Calendar className="w-5 h-5"/>
-              Dec 2024 - Jan 2025
+              Dec 2024
             </div>
 
             <p className="text-gray-700 mb-6">
