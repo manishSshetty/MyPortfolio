@@ -53,25 +53,25 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <main className="px-4 md:px-6 pt-24 md:pt-32 pb-16">
-        <div className="text-center mb-16">
+    <div className="min-h-screen bg-gray-100">
+      <main className="px-4 md:px-6 pt-12 md:pt-16 pb-16">
+        <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
             CONTACT.EXE
           </h1>
           <div className="w-16 h-1 bg-green-500 mx-auto"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
             Ready to collaborate on your next project? Let's connect and build
             something amazing together.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white border-2 border-gray-300 p-6 sm:p-8 mb-16">
-            <h2 className="text-2xl font-mono font-bold mb-6">SEND MESSAGE</h2>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white border-2 border-gray-300 p-4 sm:p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-mono font-bold mb-4">SEND MESSAGE</h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -167,71 +167,77 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="mb-16">
-            <h2 className="text-2xl font-mono font-bold mb-8">GET IN TOUCH</h2>
+          <div className="flex flex-col gap-12">
+            <div>
+              <h2 className="text-2xl font-mono font-bold mb-8">
+                GET IN TOUCH
+              </h2>
 
-            <div className="space-y-4">
-              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50">
-                <Mail />
-                <div>
-                  <div className="text-sm text-gray-600 font-mono">EMAIL</div>
-                  <div className="font-mono">manishshetty827@gmail.com</div>
-                </div>
-              </div>
-
-              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50">
-                <Phone />
-                <div>
-                  <div className="text-sm text-gray-600 font-mono">PHONE</div>
-                  <div className="font-mono">+91 9632597428</div>
-                </div>
-              </div>
-
-              <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4 hover:bg-gray-50">
-                <MapPin />
-                <div>
-                  <div className="text-sm text-gray-600 font-mono">
-                    LOCATION
+              <div className="space-y-4">
+                <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50">
+                  <Mail />
+                  <div>
+                    <div className="text-sm text-gray-600 font-mono">EMAIL</div>
+                    <div className="font-mono">manishshetty827@gmail.com</div>
                   </div>
-                  <div className="font-mono">Bengaluru</div>
+                </div>
+
+                <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4  hover:bg-gray-50">
+                  <Phone />
+                  <div>
+                    <div className="text-sm text-gray-600 font-mono">PHONE</div>
+                    <div className="font-mono">+91 9632597428</div>
+                  </div>
+                </div>
+
+                <div className="bg-white border-2 border-gray-300 p-6 flex items-center gap-4 hover:bg-gray-50">
+                  <MapPin />
+                  <div>
+                    <div className="text-sm text-gray-600 font-mono">
+                      LOCATION
+                    </div>
+                    <div className="font-mono">Bengaluru</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <h2 className="text-2xl font-mono font-bold mb-8">SOCIAL LINKS</h2>
+            <div>
+              <h2 className="text-2xl font-mono font-bold mb-8">
+                SOCIAL LINKS
+              </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a
-                href="https://github.com/manishSshetty"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer"
-              >
-                <div className="mb-2">
-                  <Github />
-                </div>
-                <div className="font-mono font-bold">GITHUB</div>
-              </a>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a
+                  href="https://github.com/manishSshetty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer"
+                >
+                  <div className="mb-2">
+                    <Github />
+                  </div>
+                  <div className="font-mono font-bold">GITHUB</div>
+                </a>
 
-              <a
-                href="https://www.linkedin.com/in/manish-shetty-50b19636a"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer"
-              >
-                <div className="mb-2">
-                  <Linkedin />
-                </div>
-                <div className="font-mono font-bold">LINKEDIN</div>
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/manish-shetty-50b19636a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white border-2 border-gray-300 p-6 text-center flex flex-col items-center justify-center gap-2 hover:bg-gray-50 cursor-pointer"
+                >
+                  <div className="mb-2">
+                    <Linkedin />
+                  </div>
+                  <div className="font-mono font-bold">LINKEDIN</div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </main>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };

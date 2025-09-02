@@ -6,22 +6,22 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   return (
     <div className="min-h-screen bg-white">
-      <main className="px-4 md:px-6 pt-24 md:pt-32 pb-16">
-        <div className="text-center mb-16">
+      <main className="px-4 md:px-6 pt-12 md:pt-16 pb-16">
+        <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
             PROJECTS.DIR
           </h1>
           <div className="w-16 h-1 bg-green-500 mx-auto"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
             A collection of projects showcasing different aspects of modern web
             development, from user interfaces to backend architecture.
           </p>
         </div>
 
-        <div className="w-full flex flex-col items-center gap-8">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white border border-gray-300 mb-8 overflow-hidden max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto shadow-[4px_4px_0px_#d1d5db]">
             <div className="relative">
               <img

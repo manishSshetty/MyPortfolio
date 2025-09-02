@@ -1,16 +1,16 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("#home");
 
   const links = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "home", label: "Home" },
+    { href: "about", label: "About" },
+    { href: "experience", label: "Experience" },
+    { href: "projects", label: "Projects" },
+    { href: "contact", label: "Contact" },
   ];
 
   return (
@@ -29,18 +29,19 @@ const Header = () => {
 
         <nav className="hidden sm:flex gap-6 text-lg">
           {links.map(({ href, label }) => (
-            <a
+            <Link
               key={href}
-              href={href}
-              onClick={() => setActiveLink(href)}
-              className={`font-mono px-1 border-b-2 ${
-                activeLink === href
-                  ? "border-green-500"
-                  : "border-transparent hover:border-green-500"
-              }`}
+              to={href}
+              smooth={true}
+              spy={true}
+              hashSpy={true}
+              offset={-70}
+              duration={500}
+              activeClass="!border-green-500"
+              className="font-mono px-1 border-b-2 border-transparent hover:border-green-500 cursor-pointer transition-all duration-300"
             >
-              {label}        
-            </a>
+              {label}
+            </Link>
           ))}
         </nav>
 
@@ -51,21 +52,20 @@ const Header = () => {
               px-4 py-3 flex flex-col gap-4"
           >
             {links.map(({ href, label }) => (
-              <a
+              <Link
                 key={href}
-                href={href}
-                onClick={() => {
-                  setActiveLink(href);
-                  setIsOpen(false);
-                }}
-                className={`font-mono inline-block w-fit px-1 border-b-2 ${
-                  activeLink === href
-                    ? "border-green-500"
-                    : "border-transparent hover:border-green-500"
-                }`}
+                to={href}
+                smooth={true}
+                spy={true}
+                hashSpy={true}
+                offset={-70}
+                duration={500}
+                activeClass="!border-green-500"
+                onClick={() => setIsOpen(false)}
+                className="font-mono inline-block w-fit px-1 border-b-2 border-transparent hover:border-green-500 cursor-pointer transition-all duration-300"
               >
                 {label}
-              </a>
+              </Link>
             ))}
           </nav>
         )}

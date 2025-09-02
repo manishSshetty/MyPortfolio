@@ -48,11 +48,6 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#gallery" className="text-sm hover:text-green-400">
-                GALLERY
-              </a>
-            </li>
-            <li>
               <a href="#contact" className="text-sm hover:text-green-400">
                 CONTACT
               </a>

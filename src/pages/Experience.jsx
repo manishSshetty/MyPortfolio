@@ -3,23 +3,23 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <main className="px-4 md:px-6 pt-24 md:pt-32 pb-16">
-        <div className="text-center mb-16">
+    <div className="min-h-screen bg-gray-100">
+      <main className="px-4 md:px-6 pt-12 md:pt-16 pb-16">
+        <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-mono font-bold mb-4">
             EXPERIENCE.LOG
           </h1>
           <div className="w-16 h-1 bg-green-500 mx-auto"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-12">
           <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
             My experience in web development, including hands-on learning
             through internship and personal projects.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="bg-white hover:bg-gray-50 border border-gray-300 p-8 w-full shadow-[6px_6px_0px_#000000]">
             <h3 className="text-2xl font-mono font-bold mb-2">
               Software Engineer Intern
@@ -37,32 +37,32 @@ const Experience = () => {
 
             <div className="flex items-center text-gray-500 mb-4 gap-1">
               <Calendar className="w-5 h-5"/>
-              Dec 2024 - Jan 2024
+              Dec 2024 - Jan 2025
             </div>
 
             <p className="text-gray-700 mb-6">
               Worked as a Software Engineer Intern at CodeLab Systems, where I
-              developed and maintained web applications using React and Node.js.
+              developed and maintained web applications using React.
             </p>
 
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded">
-                React
+                HTML
               </span>
               <span
                 className="px-3 py-1 bg-gray-100 text-gray-700 text-sm 
               rounded"
               >
-                Node.js
+                CSS
               </span>
               <span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded">
-                Express
+                JavaScript
               </span>
               <span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded">
-                MongoDB
+                React
               </span>
               <span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded">
-                Tailwind CSS
+                Material UI
               </span>
             </div>
           </div>
